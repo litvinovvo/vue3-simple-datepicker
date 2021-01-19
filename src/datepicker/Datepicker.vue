@@ -76,7 +76,7 @@ export default defineComponent({
      * Disabled dates for picking
      */
     disabledDates: {
-      dates: Array as PropType<Date[]>,
+      type: Object as PropType<{ dates: Date[] | undefined }>,
       required: false,
     },
     /**
