@@ -15,7 +15,7 @@
     "url": "https://github.com/litvinovvo/vue3-simple-datepicker/issues"
   },
   "private": false,
-  "name": "vue3-simple-datepicker",
+  "name": "@litvinovvo/vue3-simple-datepicker",
   "version": "0.1.4",
   "publishConfig": {
     "access": "public"
