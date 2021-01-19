@@ -1,15 +1,17 @@
 # Vue 3 Datepicker
 
+This is a fork from https://www.npmjs.com/package/vue3-datepicker.
+
 This is a basic (at least for now) reimplementation of https://github.com/icehaunter/vuejs-datepicker in Vue 3 and with greatly cleaned up code.
 
 All date manipulation and formatting are done via the amazing [`date-fns`](https://date-fns.org/) library, so it's a direct dependency of this picker.
 
 ## Installation
 
-Package is available on NPM: https://www.npmjs.com/package/vue3-datepicker
+Package is available on NPM: https://www.npmjs.com/package/vue3-simple-datepicker
 
 ```sh
-npm i vue3-datepicker
+npm i vue3-simple-datepicker
 ```
 
 The component is packaged mainly for use with bundlers, if you require a browser build - post an issue.

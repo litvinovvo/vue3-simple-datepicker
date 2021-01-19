@@ -15,12 +15,12 @@
     "url": "https://github.com/litvinovvo/vue3-simple-datepicker/issues"
   },
   "private": false,
-  "name": "@litvinovvo/vue3-simple-datepicker",
+  "name": "vue3-simple-datepicker",
   "version": "0.1.4",
   "publishConfig": {
     "access": "public"
   },
-  "description": "A simple Vue 3 datepicker component. Supports disabling of dates, translations. Dependent on date-fns. Fork from vue3-datepicker by Ilya Borovitinov.",
+  "description": "A simple Vue 3 datepicker component. Supports disabling of dates, translations. Dependent on date-fns. Forked from vue3-datepicker by Ilya Borovitinov.",
   "keywords": [
     "vue",
     "vue 3",
