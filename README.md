@@ -23,6 +23,7 @@ The component is packaged mainly for use with bundlers, if you require a browser
     :locale="locale"
     :upperLimit="to"
     :lowerLimit="from"
+    :disabledDates="{ dates: [ new Date(2021, 1, 2) ] }"
   />
 </template>
 ```
@@ -38,6 +39,7 @@ Main interaction to date selection is done via `v-model` with `Date` as expected
 |---|---|---|---|
 |`upperLimit`|`Date`||Upper limit for available dates for picking|
 |`lowerLimit`|`Date`||Lower limit for available dates for picking|
+|`disabledDates`|`{ dates: Date[] }`||Disabled dates for picking|
 |`startingView`| `'day' \| 'month' \| 'year'` | `'day'` |View on which the date picker should open. Can be either `year`, `month`, or `day` |
 | `monthHeadingFormat` | `String` | `LLLL yyyy` | `date-fns`-type formatting for a month view heading
 | `weekdayFormat` | `String` | `EE` | `date-fns`-type formatting for a line of weekdays on day view

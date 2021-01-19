@@ -1,7 +1,7 @@
 {
   "author": {
-    "email": "icehaunter@gmail.com",
-    "name": "Ilya Borovitinov"
+    "email": "litvinovvo@gmail.com",
+    "name": "Vladimir Litvinov"
   },
   "license": "MIT",
   "engines": {
@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/icehaunter/vue3-datepicker.git"
+    "url": "https://github.com/litvinovvo/vue3-simple-datepicker.git"
   },
   "bugs": {
-    "url": "https://github.com/icehaunter/vue3-datepicker/issues"
+    "url": "https://github.com/litvinovvo/vue3-simple-datepicker/issues"
   },
   "private": false,
-  "name": "vue3-datepicker",
+  "name": "vue3-simple-datepicker",
   "version": "0.1.3",
   "publishConfig": {
     "access": "public"
   },
-  "description": "A simple Vue 3 datepicker component. Supports disabling of dates, translations. Dependent on date-fns.",
+  "description": "A simple Vue 3 datepicker component. Supports disabling of dates, translations. Dependent on date-fns. Fork from vue3-datepicker by Ilya Borovitinov.",
   "keywords": [
     "vue",
     "vue 3",
