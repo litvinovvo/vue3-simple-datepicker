@@ -91,6 +91,10 @@ export default defineComponent({
       type: Date as PropType<Date>,
       required: false,
     },
+    disabledDates: {
+      type: Object as PropType<{ dates: Date[] | undefined }>,
+      required: false,
+    },
   },
   setup(props, { emit }) {
     const format = computed(() =>
@@ -132,8 +136,12 @@ export default defineComponent({
     const isEnabled = (
       target: Date,
       lower: Date | undefined,
-      upper: Date | undefined
+      upper: Date | undefined,
+      disabledDates: { dates: Date[] | undefined } | undefined
     ): boolean => {
+      if (disabledDates
+          && disabledDates.dates
+          && disabledDates.dates.some(date => isSameDay(target, date))) return false
       if (!lower && !upper) return true
       if (lower && isBefore(target, startOfDay(lower))) return false
       if (upper && isAfter(target, endOfDay(upper))) return false
@@ -147,8 +155,8 @@ export default defineComponent({
         display: dayFormat(value),
         selected: props.selected && isSameDay(props.selected, value),
         disabled:
-          !isWithinInterval(value, currentMonth.value) ||
-          !isEnabled(value, props.lowerLimit, props.upperLimit),
+            !isWithinInterval(value, currentMonth.value) ||
+            !isEnabled(value, props.lowerLimit, props.upperLimit, props.disabledDates),
         key: format.value('yyyy-MM-dd', value),
       }))
     })
